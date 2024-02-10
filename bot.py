@@ -49,4 +49,6 @@ while True:
     for message in messages_to_send:
         auto_type_and_enter(driver, message)
         print(f"Message '{message}' successfully sent")
-        sleep(60)
+        sleep(10)
+        driver.refresh()
+        sleep(30)
